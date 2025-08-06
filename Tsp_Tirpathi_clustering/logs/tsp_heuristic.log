@@ -1,0 +1,18 @@
+TSP_CLUSTERING_HEURISTIC
+Input file: input_files\tsp_locations_1000.csv
+Output file: output_files\solver_comparison.csv
+
+Results Summary:
+    Sample_Size Cluster_Type  Num_Clusters  Objective_Value  Runtime_Seconds  Num_Locations
+0           100   5_clusters             5     22889.736969        35.854222            100
+1           100  10_clusters            10     25391.046421         4.368173            100
+2           100  15_clusters            15     24141.777604         3.872203            100
+3           100  20_clusters            20     26384.084531         2.422425            100
+4           200   5_clusters             5     26424.144803        73.386292            200
+5           200  10_clusters            10     29859.058184        15.843615            200
+6           200  15_clusters            15     30799.762180        12.636194            200
+7           200  20_clusters            20     32101.987091        11.561981            200
+8           500   5_clusters             5     21180.366559       873.094228            500
+9           500  10_clusters            10     40923.068898        99.329038            500
+10          500  15_clusters            15     40132.058806       330.688509            500
+11          500  20_clusters            20     43150.643950        36.244607            500

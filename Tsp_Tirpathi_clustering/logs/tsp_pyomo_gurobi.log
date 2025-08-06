@@ -1,0 +1,18 @@
+TSP_PYOMO_GUROBI_HEURISTIC
+Input file: input_files\tsp_locations_1000.csv
+Output file: output_files\solver_comparison.csv
+
+Results Summary:
+    Sample_Size Cluster_Type  Num_Clusters  Objective_Value  Runtime_Seconds       MIP_Gap  Num_Locations
+0           100   5_clusters             5        48.149534         0.332814  2.220446e-16              5
+1           100  10_clusters            10        71.069890         0.577425  0.000000e+00             10
+2           100  15_clusters            15        79.475328         0.813045 -4.297034e-02             15
+3           100  20_clusters            20        88.467646         0.828042 -3.604155e-02             20
+4           200   5_clusters             5        48.864694         0.064007  0.000000e+00              5
+5           200  10_clusters            10        68.609858         0.167001 -1.477931e-02             10
+6           200  15_clusters            15        78.662732         0.584561 -3.443039e-02             15
+7           200  20_clusters            20        87.241400         0.576990 -1.110223e-16             20
+8           500   5_clusters             5        53.158596         0.058394 -1.898769e-02              5
+9           500  10_clusters            10        66.334091         0.127516 -2.096348e-02             10
+10          500  15_clusters            15        76.851162         0.274709 -4.779273e-02             15
+11          500  20_clusters            20        84.452118         0.310573 -3.740113e-02             20

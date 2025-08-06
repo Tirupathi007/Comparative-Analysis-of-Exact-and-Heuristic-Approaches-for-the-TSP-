@@ -1,0 +1,30 @@
+Solving TSP using MTZ formulation for sub tour elimination using Gurobi & CBC solvers,,,,,,,,,,,,,Using mip focus=1    gurobi solver,,,,
+Num_cities,Gurobi_Distance,Gurobi_Runtime,Gurobi_MipGap,Gurobi_Status,,CBC_Distance,CBC_Runtime,CBC_MipGap,CBC_Status,,,,Num_cities,Distance,Runtime,MIPGap,Status
+10,6177.496777,1.112483,0,Optimal,,6177.496777,20.859224,0,Optimal,,,,10,6177.496777,7.719056,0,Optimal
+20,7962.079019,39.175006,0,Optimal,,7962.079019,600.15408,0,maxTimeLimit,,,,20,7962.079019,74.406501,0,Optimal
+30,10320.29223,601.338432,5.66,maxTimeLimit,,11395.39553,598.729461,8.18,maxTimeLimit,,,,30,10320.29223,606.540892,5.66,maxTimeLimit
+40,11237.46586,602.420976,6.47,maxTimeLimit,,12381.03035,594.700142,18.97,maxTimeLimit,,,,40,11237.46586,604.134292,6.47,maxTimeLimit
+50,12094.07465,603.465666,3.5,maxTimeLimit,,14576.90003,594.57181,41.26,maxTimeLimit,,,,50,12094.07465,606.804425,10.91,maxTimeLimit
+70,13498.50694,601.31466,6.15,maxTimeLimit,,17035.33765,600.973647,43.67,maxTimeLimit,,,,70,13498.50694,603.669605,8.06,maxTimeLimit
+100,15655.23204,601.149643,6.07,maxTimeLimit,,19936.6933,601.515423,57.16,maxTimeLimit,,,,100,15359.12632,606.150285,6.76,maxTimeLimit
+200,22282.29118,603.269681,11.01,maxTimeLimit,,16535.97713,606.279462,60.3,intermediateNonInteger,,,,200,21118.50806,607.220012,6.19,maxTimeLimit
+500,55004.38907,1266.588248,48.7,maxTimeLimit,,,,,,,,,500,155760.0019,1301.905937,47.39,maxTimeLimit
+750,224696.614,1273.714599,84.2,maxTimeLimit,,,,,,,,,750,233303.5539,1421.302316,50.3,maxTimeLimit
+1000,229537.6679,1385.326561,82.593,maxTimeLimit,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+Using  OR_tools solution as warm start for Gurobi Solver,,,,,,,,,,Using cluster heauristic along  gurobi solver,,,,,,,
+,,,,,,,,,,Problem Size,Clusters,Tour Length (km),Runtime (s),,,,
+Cities,OR-Tools Distance,OR-Tools Runtime,OR-Tools Status,Gurobi Distance,Gurobi Runtime,Gurobi Status,Improvement %,,,100,5,39879.21893,10.37359214,,,,
+50,12094.049,9.87885499,Heuristic,8838.918,0.290987968,optimal,26.92,,,100,10,31104.26112,0.019636869,,,,
+100,15772.335,42.78723335,Heuristic,11738.552,0.309859991,optimal,25.58,,,100,15,25859.96329,0.026009798,,,,
+200,21306.145,162.8840983,Heuristic,16535.874,1.400875807,optimal,22.39,,,100,20,24732.7454,0.023841381,,,,
+500,31303.986,600.001179,Heuristic,24524.094,7.960695028,optimal,21.66,,,200,5,69304.80203,0.012644529,,,,
+1000,44732.155,600.001945,Heuristic,33888.483,100.3865044,optimal,24.24,,,200,10,51455.63325,0.015167236,,,,
+,,,,,,,,,,200,15,43286.77369,0.020804167,,,,
+,,,,,,,,,,200,20,39845.31307,0.02458334,,,,
+,,,,,,,,,,500,5,169918.6968,0.020946026,,,,
+,,,,,,,,,,500,10,116907.8089,0.027354002,,,,
+,,,,,,,,,,500,15,98601.80289,0.030579567,,,,
+,,,,,,,,,,500,20,83534.71213,0.037145615,,,,
+,,,,,,,,,,,,"Here we can see as the size of clusters increses , the objective value getting close to optimal",,,,,
+,,,,,,,,,,,,,,,,,
