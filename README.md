@@ -2,6 +2,7 @@ Travelling Salesman Problem - Project Analysis
 This project focuses on solving the Travelling Salesman Problem (TSP) using multiple algorithms and analyzing their performance on instances with up to 1000 cities.
 
 Project Structure
+
 Tsp_ChinnalaTirupathi_2/
 │
 ├── Tsp_Tirupathi_solvers/          # Custom heuristic and exact solvers
